@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "ISV for Mobile.de",
+  "version": "1.0.0",
+  "description":"O simulador de ISV (Imposto sobre veiculos) é uma ferramenta simples para se saber o custo da operação de matricular um veiculo proveniente do estrangeiro.",
+  "content_scripts": [{ "matches": ["<all_urls>"], "js": ["Content.js"] }],
+  "icons": {
+    "16": "/images/trailer_16.png",
+    "32": "/images/trailer_32.png",
+    "48": "/images/trailer_48.png",
+    "128": "/images/trailer_128.png"
+  },
+  "browser_action": {
+    "default_icon": "/images/trailer_32.png",
+    "default_popup": "popup.html"
+  }
+}
